@@ -1,0 +1,182 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+@keyframes movimento {
+    from {background-position: 0% 0%;}
+    to {background-position: 0% 90%;}
+}
+
+html{
+    height: 100%;
+}
+
+.fundo-animado{
+    width: 100%;
+    height: 300px;
+    /*background-image: linear-gradient(90deg, #d1f5ff,#B198EB, #7d53de);*/
+    /*background-image: linear-gradient(90deg, #AFE3C0,#3AA65E, #099015);*/
+
+    background-image: url(../Foto/wave-haikei\ \(2\).svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: movimento 6s infinite alternate;
+}
+
+.fundo-animado h1 {
+    color: azure;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    border: 2px solid white;
+    padding: 10px 13px 10px 13px;
+}
+
+.text-bio > p {
+    text-align: justify;
+}
+
+.head {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px;
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+}
+
+.head h1 {
+    padding: 25px 0px 25px 0px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+}
+
+.head p {
+    padding: 10px 0px 10px 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.head link {
+    margin-top: 300px;
+}
+
+.head a {
+    color:  #9400d3;
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding-left: 15px;
+    transition: ease 0.5s;
+    border: 1px solid  #b301ff;
+    padding: 5px 10% 5px 10%;
+    
+}
+
+.head a:hover {
+    background-color: #9400d3;
+    color: white;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.links {
+    margin: 10px 0px 10px 0px;
+    padding: 15px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    width:90%;
+    height: 100px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.links p {
+    padding-top:12px;
+}
+
+.links a {
+   color: black; 
+}
+
+.links a:hover {
+    color: #9400d3;
+}
+
+@media (width <= 550px) {
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .fundo-animado {
+        height: 200px;
+    }
+    .fundo-animado h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media (width <= 390px) {
+
+    .fundo-animado {
+        height: 150px;
+    }
+    .fundo-animado h1 {
+        font-size: 0.9em;
+    }
+
+    .head h1 {
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    p {
+        font-family: 0.7em;
+    }
+}
+
+
