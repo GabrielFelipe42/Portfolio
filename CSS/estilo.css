@@ -20,15 +20,13 @@ font-family: 'Roboto Mono', monospace;
     to {background-position: 0% 90%;}
 }
 
-html{
+html, body{
     height: 100%;
 }
 
 .fundo-animado{
     width: 100%;
     height: 300px;
-    /*background-image: linear-gradient(90deg, #d1f5ff,#B198EB, #7d53de);*/
-    /*background-image: linear-gradient(90deg, #AFE3C0,#3AA65E, #099015);*/
 
     background-image: url(../Foto/wave-haikei\ \(2\).svg);
     background-position: center bottom;
@@ -86,7 +84,6 @@ html{
     color:  #9400d3;
     font-size: 1.3em;
     font-weight: bolder;
-    /*padding-left: 15px;*/
     transition: ease 0.5s;
     border: 1px solid  #b301ff;
     padding: 5px 5%;
@@ -109,6 +106,8 @@ a {
     align-items: center;
 
     margin-top: 30px;
+    /* padding-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.459); */
 }
 
 .links {
